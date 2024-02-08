@@ -1,0 +1,455 @@
+/* ? >>>>>>>>>>>>>>>  Customize Global   >>>>>>>>>>>>>>> */
+
+* {
+  text-decoration: none !important;
+  font-family: cursive;
+}
+
+[data-theme="dark"] {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+  --login-main-color: #3d4045;
+}
+
+[data-theme="light"] {
+  --main-color: #eeeeee;
+  --seconde-color: #909396;
+  --color-text: #000;
+  --btn-main-color: #414550;
+  --login-main-color: #efefef;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+hr {
+  color: var(--color-text) !important;
+}
+
+small {
+  font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #7b7b7b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 10px;
+}
+
+/* ? >>>>>>>>>>>>>>>  Start Navbar   >>>>>>>>>>>>>>> */
+
+nav {
+  box-shadow: 0px 0px 10px black;
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--main-color) !important;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav .capture {
+  width: 27px;
+  height: 28px;
+}
+
+.active {
+  color: green !important;
+}
+
+.bell {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/nav/Bell.png);
+  background-position: center;
+  background-size: cover;
+  margin-inline: 10px;
+}
+
+.chat {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/nav/chat.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/Ellipse\ 10.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  width: 320px;
+}
+
+.dropdown-menu li {
+  padding: 5px;
+}
+
+.dropdown-menu li:hover {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+/* ? >>>>>>>>>>>>>>>  End Navbar   >>>>>>>>>>>>>>> */
+
+/* * >>>>>>>>>>>>>>>  Owl Carousel Start   >>>>>>>>>>>>>>> */
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+.owlImg {
+  position: relative;
+}
+
+.owl-next,
+.owl-prev {
+  width: 40px !important;
+  height: 40px !important;
+  top: 50%;
+  position: absolute;
+  color: var(--color-text) !important;
+  background-color: var(--main-color) !important;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.owl-next {
+  right: -15px;
+}
+
+.owl-prev {
+  left: -15px;
+}
+
+.owl-next span {
+  width: 50px !important;
+}
+
+.owl-next,
+.owl-prev span {
+  font-size: 30px !important;
+}
+
+/* * >>>>>>>>>>>>>>>  Owl Carousel End   >>>>>>>>>>>>>>> */
+
+/* ? >>>>>>>>>>>>>>>  Service Start   >>>>>>>>>>>>>>> */
+
+.theCheck {
+  width: 25px;
+  height: 25px;
+}
+
+/* ? >>>>>>>>>>>>>>>  Service End   >>>>>>>>>>>>>>> */
+
+/* ! >>>>>>>>>>>>>>>  Purchase Start   >>>>>>>>>>>>>>> */
+
+.nums {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.nums button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--btn-main-color);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#expandable {
+  color: #000 !important;
+}
+
+.purchase .dollar {
+  padding: 5px;
+}
+
+.purchase .dollar span {
+  color: #000 !important;
+}
+
+#purchase {
+  width: 150px;
+  border: 0;
+  background-color: chocolate;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0;
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+#purchase:hover {
+  background-color: blueviolet;
+  color: #000;
+}
+
+/* ! >>>>>>>>>>>>>>>  Purchase End   >>>>>>>>>>>>>>> */
+
+/* ? >>>>>>>>>>>>>>>  Service Rating Start >>>>>>>>>>>>>>> */
+
+.rating {
+  margin-top: 80px;
+}
+.progress {
+  width: 95%;
+  height: 10px;
+  background-color: #fff !important;
+}
+
+.janImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/PosterAvatar.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeniverImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/Ellipse\ 10.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.transIcon {
+  color: #e9ecef;
+}
+
+.janeSmith {
+  line-height: 0;
+}
+
+.post {
+  width: 120px;
+  border: 0;
+  background-color: chocolate;
+  color: #fff;
+  border-radius: 5px;
+  padding-block: 10px;
+  transition: all 0.5s;
+  margin-top: 5px;
+}
+
+.post:hover {
+  background-color: blueviolet;
+  color: #000;
+}
+/* ? >>>>>>>>>>>>>>>  Service Rating End >>>>>>>>>>>>>>> */
+
+/* * >>>>>>>>>>>>>>>  Contact Start >>>>>>>>>>>>>>> */
+
+.contact span {
+  color: #414550;
+  font-size: 18px;
+}
+
+#contact {
+  width: 80%;
+  border: 0;
+  background-color: chocolate;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+#contact:hover {
+  background-color: blueviolet;
+  color: #000;
+}
+
+/* * >>>>>>>>>>>>>>>  Contact End >>>>>>>>>>>>>>> */
+
+/* ! >>>>>>>>>>>>>>>  Info Start >>>>>>>>>>>>>>> */
+
+.info {
+  color: var(--color-text) !important;
+}
+
+.dollarsign {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text) !important;
+}
+
+.dollarsign1 {
+  background-color: #414550;
+}
+
+/* ! >>>>>>>>>>>>>>>  Info End >>>>>>>>>>>>>>> */
+
+/* ? >>>>>>>>>>>>>>>  Share-Earn Start >>>>>>>>>>>>>>> */
+
+.share-earn .social span {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  background-size: cover;
+}
+
+/* ? >>>>>>>>>>>>>>>  Share-Earn End >>>>>>>>>>>>>>> */
+
+/* * >>>>>>>>>>>>>>>  seller Start >>>>>>>>>>>>>>> */
+
+.contact,
+.seller,
+.share-earn,
+.info {
+  margin-top: 30px;
+}
+
+.seller {
+  height: 385px;
+}
+
+.sellerImg {
+  height: 120px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: url(../images/Al\ Barges.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.sellerCaption {
+  height: 120px;
+}
+
+/* * >>>>>>>>>>>>>>>  seller End >>>>>>>>>>>>>>> */
+
+/* ? >>>>>>>>>>>>>>>  Footer >>>>>>>>>>>>>>> */
+
+footer p,
+.spanDollar {
+  color: #000 !important;
+}
+
+/* ? >>>>>>>>>>>>>>>  Footer >>>>>>>>>>>>>>> */
+
+/* ! >>>>>>>>>>>>>>> Start Loader >>>>>>>>>>>>>>> */
+
+.loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #353839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ! >>>>>>>>>>>>>>> End Loader >>>>>>>>>>>>>>> */
+
+/* ? >>>>>>>>>>>>>>> Start Media Quary >>>>>>>>>>>>>>> */
+
+@media (max-width: 1199.98px) {
+  .the-right-side {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav {
+    position: relative !important;
+  }
+  .dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    right: -350% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+/* ? >>>>>>>>>>>>>>> End Media Quary >>>>>>>>>>>>>>> */

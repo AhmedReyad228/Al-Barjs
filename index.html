@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? ======>> Title ========>> -->
+    <title>AL BARJS</title>
+
+    <!-- * ======>> Roboto-Mono Font ========>> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ? ======>> AOS Plugin ========>> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ! ======>> Owl Carousel ========>> -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- ! ======>> Fontawesome ========>> -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- * ======>> BootStrap ========>> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ? ======>> My CSS ========>>  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" role="button">
+                <div class="text-center">
+                  <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                  <small class="d-block">Auctions</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" role="button">
+                <div class="text-center">
+                  <i class="fa-solid fa-trophy fa-lg"></i>
+                  <small class="d-block">Contests</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" role="button">
+                <div class="text-center">
+                  <i class="fa-solid fa-briefcase fa-lg"></i>
+                  <small class="d-block">Project</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" role="button">
+                <div class="text-center">
+                  <i class="fa-regular fa-image fa-lg"></i>
+                  <small class="d-block">Portfolios</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" role="button">
+                <div class="text-center">
+                  <i class="fa-solid fa-users fa-lg"></i>
+                  <small class="d-block">Freelancers</small>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" role="button">
+                <div class="text-center">
+                  <i class="fa-solid fa-message fa-lg"></i>
+                  <small class="d-block">Forum</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center">
+            <div class="chat"></div>
+            <div class="bell"></div>
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="user"></div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end p-3 overflow-auto">
+                <div class="d-flex align-items-center">
+                  <div class="jeniverImg me-2"></div>
+                  <div class="mt-2">
+                    <h6 class="janeSmith">Ahmed Ali</h6>
+                    <div>
+                      <span class="d-inline-block text-info">Student</span>
+                    </div>
+                  </div>
+                </div>
+                <li class="my-3">
+                  <div>
+                    <i
+                      class="fa-regular fa-user fa-lg me-2"
+                      style="color: #74c0fc"
+                    ></i>
+                    <span class="text-black">My Profile</span>
+                  </div>
+                </li>
+
+                <li class="my-3">
+                  <div
+                    onclick="myMode()"
+                    role="button"
+                    class="d-flex justify-content-between"
+                  >
+                    <div>
+                      <i
+                        class="fa-regular fa-moon fa-lg me-2"
+                        style="color: #74c0fc"
+                      ></i>
+                      <span class="text-black">Dark Mode</span>
+                    </div>
+                    <div>
+                      <i
+                        id="mode"
+                        role="button"
+                        class="fa-regular fa-sun fa-xl z-3"
+                      ></i>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="my-3">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <i
+                        class="fa-solid fa-globe fa-lg me-2"
+                        style="color: #74c0fc"
+                      ></i>
+                      <span class="text-black">Language</span>
+                    </div>
+                    <div>العربية</div>
+                  </div>
+                </li>
+
+                <li class="my-3">
+                  <div>
+                    <i
+                      class="fa-solid fa-gear fa-lg"
+                      style="color: #74c0fc"
+                    ></i>
+                    <span class="text-black">Acount Settings</span>
+                  </div>
+                </li>
+
+                <div>
+                  <i
+                    class="fa-solid fa-arrow-right-from-bracket fa-lg me-2"
+                    style="color: #ff0000"
+                  ></i>
+                  <span class="text-danger" role="button">Log Out</span>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-xl-8">
+            <!-- ? >>>>>>>>>> Design Section >>>>>>>>>> -->
+            <div class="design mt-5" data-aos="fade-right">
+              <h5 class="text-primary">Design / Logo Design</h5>
+              <h4 class="mb-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                voluptas optio iste eos! Sunt, et!
+              </h4>
+              <div class="d-flex justify-content-between">
+                <div class="stars">
+                  <i class="fas fa-star fa-lg text-warning"></i>
+                  <i class="fas fa-star fa-lg text-warning"></i>
+                  <i class="fas fa-star fa-lg text-warning"></i>
+                  <i class="fas fa-star fa-lg text-warning me-4"></i>
+                  <p class="d-inline-block">4.1(500)</p>
+                </div>
+                <div class="share">
+                  <i
+                    class="fa-solid fa-share-nodes fa-lg me-2"
+                    style="color: #aabad4"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart fa-lg"
+                    style="color: #aabad4"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- ? >>>>>>>>>> Owl Carousel >>>>>>>>>> -->
+            <div class="owl-carousel owl-theme mt-3" data-aos="fade-right">
+              <img class="owlImg" src="images/Al Barges.png" alt="Al Barges" />
+              <img class="owlImg" src="images/Al Barges.png" alt="Al Barges" />
+              <img class="owlImg" src="images/Al Barges.png" alt="Al Barges" />
+            </div>
+
+            <!-- ? >>>>>>>>>> Description >>>>>>>>>> -->
+            <div data-aos="fade-right">
+              <h3 class="my-4">Description</h3>
+              <p class="mb-4 p-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellat, ex. Debitis dolorem minus in aspernatur. Est,
+                cupiditate? Deleniti dolore corporis, nulla molestiae omnis
+                similique animi laboriosam ipsam odio ea hic quidem quae facilis
+                optio, iste doloremque porro ullam ex asperiores. Voluptatum,
+                aut asperiores. A provident voluptatibus ipsam non quis
+                obcaecati!
+              </p>
+            </div>
+
+            <!-- ? >>>>>>>>>> Service-Ads >>>>>>>>>> -->
+            <div data-aos="fade-right">
+              <h3 class="mb-4 mt-5">Service Adds-Ons</h3>
+              <div class="p-2 mb-4" data-aos="fade-right">
+                <div class="d-flex justify-content-between">
+                  <input class="theCheck me-3 mt-2" type="checkbox" />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium aspernatur omnis repudiandae nobis deleniti ut
+                    veritatis. Quam neque aliquam veniam!
+                  </p>
+                </div>
+                <div class="mt-3">
+                  <span
+                    class="bg-body-secondary rounded-2 p-1 me-2 text-body-tertiary"
+                    >$100</span
+                  >
+                  <span
+                    class="bg-body-secondary rounded-2 p-1 text-body-tertiary"
+                    >2 days</span
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="p-2 mb-4" data-aos="fade-right">
+                <div class="d-flex justify-content-between">
+                  <input class="theCheck me-3 mt-2" type="checkbox" />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium aspernatur omnis repudiandae nobis deleniti ut
+                    veritatis. Quam neque aliquam veniam!
+                  </p>
+                </div>
+                <div class="mt-3">
+                  <span
+                    class="bg-body-secondary rounded-2 p-1 me-2 text-body-tertiary"
+                    >$100</span
+                  >
+                  <span
+                    class="bg-body-secondary rounded-2 p-1 text-body-tertiary"
+                    >2 days</span
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="p-2 mb-4" data-aos="fade-right">
+                <div class="d-flex justify-content-between">
+                  <input class="theCheck me-3 mt-2" type="checkbox" />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium aspernatur omnis repudiandae nobis deleniti ut
+                    veritatis. Quam neque aliquam veniam!
+                  </p>
+                </div>
+                <div class="mt-3">
+                  <span
+                    class="bg-body-secondary rounded-2 p-1 me-2 text-body-tertiary"
+                    >$100</span
+                  >
+                  <span
+                    class="bg-body-secondary rounded-2 p-1 text-body-tertiary"
+                    >2 days</span
+                  >
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <!-- ? >>>>>>>>>> Purchase Service >>>>>>>>>> -->
+            <div class="purchase mb-5" data-aos="fade-right">
+              <h3 class="my-5">Purchase Service</h3>
+              <div class="d-flex justify-content-around">
+                <div class="nums bg-body-secondary">
+                  <button id="minus">-</button>
+                  <span id="expandable">0</span>
+                  <button id="plus">+</button>
+                </div>
+
+                <div class="dollar bg-body-secondary">
+                  <span id="total">0</span>$
+                </div>
+                <button id="purchase">Purchase</button>
+              </div>
+            </div>
+
+            <!-- ? >>>>>>>>>>> Service Rating >>>>>>>>>> -->
+            <div class="rating" data-aos="fade-right">
+              <div class="d-flex align-items-baseline">
+                <i class="fas fa-star fa-lg text-warning me-3"></i>
+                <h3>4.6 Service Rating . 46 Ratings</h3>
+              </div>
+              <div class="row ps-3 mt-4 mb-2 g-0">
+                <div class="col-md-4">
+                  <div
+                    class="d-flex align-items-baseline justify-content-between"
+                  >
+                    <h6>Work Quality</h6>
+                    <span
+                      ><i class="fas fa-star text-warning me-3"></i>5.0</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-3 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg transIcon me-1"></i>
+                </div>
+
+                <div
+                  class="col-md-5 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="progress me-3"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning"
+                      style="width: 75%"
+                    ></div>
+                  </div>
+                  <div class="text-primary">4</div>
+                </div>
+              </div>
+
+              <div class="row ps-3 mt-4 mb-2 g-0">
+                <div class="col-md-4">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <h6>Communication & Collaboration</h6>
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fas fa-star text-warning me-3"></i>
+                      <span>5.0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-3 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg transIcon me-1"></i>
+                </div>
+
+                <div
+                  class="col-md-5 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="progress me-3"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning"
+                      style="width: 75%"
+                    ></div>
+                  </div>
+                  <div class="text-primary">4</div>
+                </div>
+              </div>
+
+              <div class="row ps-3 mt-4 mb-2 g-0">
+                <div class="col-md-4">
+                  <div
+                    class="d-flex align-items-baseline justify-content-between"
+                  >
+                    <h6>Adherence and Schedule</h6>
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fas fa-star text-warning me-3"></i>
+                      <span>5.0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-3 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg text-warning me-1"></i>
+                  <i class="fas fa-star fa-lg transIcon me-1"></i>
+                </div>
+
+                <div
+                  class="col-md-5 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="progress me-3"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg-warning"
+                      style="width: 75%"
+                    ></div>
+                  </div>
+                  <div class="text-primary">4</div>
+                </div>
+              </div>
+              <hr />
+
+              <div class="ps-3 mt-lg-5" data-aos="fade-right">
+                <div class="d-flex align-items-center">
+                  <div class="janImg me-2"></div>
+                  <div class="mt-2">
+                    <h6 class="janeSmith">Jane Smith</h6>
+                    <div>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star transIcon m-0"></i>
+                      <span class="d-inline-block ms-3 text-info">.30 m</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="px-5 pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium fugit autem non et corrupti esse error dolorem
+                  ullam! Maiores ullam et soluta facere! Error maxime provident
+                  ipsa corporis a natus assumenda, dolores praesentium sequi
+                  fugiat vitae laudantium officiis quo, ut est quod cupiditate
+                  dolore, nemo alias veniam eos explicabo.
+                </p>
+              </div>
+
+              <div class="ps-3 mt-lg-5" data-aos="fade-right">
+                <div class="d-flex align-items-center">
+                  <div class="janImg me-2"></div>
+                  <div class="mt-2">
+                    <h6 class="janeSmith">Jane Smith</h6>
+                    <div>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star transIcon m-0"></i>
+                      <span class="d-inline-block ms-3 text-info">.30 m</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="px-5 pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium fugit autem non et corrupti esse error dolorem
+                  ullam! Maiores ullam et soluta facere! Error maxime provident
+                  ipsa corporis a natus assumenda, dolores praesentium sequi
+                  fugiat vitae laudantium officiis quo, ut est quod cupiditate
+                  dolore, nemo alias veniam eos explicabo.
+                </p>
+              </div>
+
+              <div class="ps-3 mt-lg-5" data-aos="fade-right">
+                <div class="d-flex align-items-center">
+                  <div class="janImg me-2"></div>
+                  <div class="mt-2">
+                    <h6 class="janeSmith">Jane Smith</h6>
+                    <div>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star fa-sm text-warning m-0"></i>
+                      <i class="fas fa-star transIcon m-0"></i>
+                      <span class="d-inline-block ms-3 text-info">.30 m</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="px-5 pt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium fugit autem non et corrupti esse error dolorem
+                  ullam! Maiores ullam et soluta facere! Error maxime provident
+                  ipsa corporis a natus assumenda, dolores praesentium sequi
+                  fugiat vitae laudantium officiis quo, ut est quod cupiditate
+                  dolore, nemo alias veniam eos explicabo.
+                </p>
+              </div>
+
+              <div class="ps-3 mt-lg-5" data-aos="fade-right">
+                <div class="row g-3">
+                  <div class="col-md-1">
+                    <div class="jeniverImg me-2"></div>
+                  </div>
+                  <div class="col-md-11">
+                    <textarea
+                      class="w-100 mt-2 p-2 border-0 bg-body-secondary"
+                      cols="10"
+                      rows="5"
+                      placeholder="Write your preview here"
+                    ></textarea>
+                    <button class="post">Post Review</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 offset-1 p-0 mt-3 the-right-side">
+            <!-- ? >>>>>>>>>>> Contact >>>>>>>>>> -->
+            <div class="contact p-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <i
+                  class="fa-solid fa-user-group fa-xl"
+                  style="color: #74c0fc"
+                ></i>
+                <span>Friends</span>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <i
+                  class="fa-solid fa-bookmark fa-xl"
+                  style="color: #74c0fc"
+                ></i>
+                <span>Saved</span>
+              </div>
+
+              <div
+                class="d-flex align-items-center justify-content-between mb-5"
+              >
+                <i
+                  class="fa-solid fa-users-viewfinder fa-xl"
+                  style="color: #74c0fc"
+                ></i>
+                <span>Groups</span>
+              </div>
+
+              <div class="d-flex justify-content-around">
+                <div class="">
+                  <i
+                    class="fa-solid fa-medal fa-xl me-3 bg-body-secondary rounded-2 p-2"
+                    style="color: #514b1f"
+                  ></i>
+                  <i
+                    class="fa-solid fa-arrow-right-to-bracket fa-xl me-3 bg-body-secondary rounded-2 p-2"
+                    style="color: #514b1f"
+                  ></i>
+                  <i
+                    class="fa-solid fa-user-tag fa-xl bg-body-secondary rounded-2 p-2"
+                    style="color: #514b1f"
+                  ></i>
+                </div>
+              </div>
+
+              <p class="p-2 my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio vero ipsum?
+              </p>
+              <button id="contact">Contact Me</button>
+            </div>
+
+            <!-- ? >>>>>>>>>>> Info >>>>>>>>>> -->
+            <div class="info p-3">
+              <h4>Info</h4>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex align-items-center">
+                  <div class="dollarsign dollarsign1 me-2 text-white">$</div>
+                  <div>Price</div>
+                </div>
+                <div>$10</div>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex align-items-center">
+                  <div class="dollarsign me-2 text-white">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div>Delivery Duration</div>
+                </div>
+                <div>1 day</div>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex align-items-center">
+                  <div class="dollarsign me-2 text-white">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </div>
+                  <div>In Progress Orders</div>
+                </div>
+                <div>2</div>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex align-items-center">
+                  <div class="dollarsign me-2 text-white">
+                    <i class="fa-solid fa-user-group"></i>
+                  </div>
+                  <div>Customers</div>
+                </div>
+                <div>2</div>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex align-items-center">
+                  <div class="dollarsign dollarsign1 me-2 text-white">
+                    <i class="fa-solid fa-percent"></i>
+                  </div>
+                  <div>Sales</div>
+                </div>
+                <div>$25</div>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex align-items-center">
+                  <div class="dollarsign me-2 text-white">
+                    <i class="fa-solid fa-list"></i>
+                  </div>
+                  <div>Category</div>
+                </div>
+                <div>Design</div>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex align-items-center">
+                  <div class="dollarsign me-2 text-white">
+                    <i class="fa-solid fa-list"></i>
+                  </div>
+                  <div>Subcategory</div>
+                </div>
+                <div>Logo Design</div>
+              </div>
+            </div>
+
+            <!-- ? >>>>>>>>>>> Share & Earn >>>>>>>>>> -->
+            <div class="share-earn p-3">
+              <h4>Share & earn</h4>
+              <div class="social d-flex justify-content-between">
+                <span class="social-box"></span>
+                <span class="social-box"></span>
+                <span class="social-box"></span>
+                <span class="social-box"></span>
+                <span class="social-box"></span>
+              </div>
+            </div>
+
+            <!-- ? >>>>>>>>>>> Seller Other Services >>>>>>>>>> -->
+            <div class="seller">
+              <h4 class="mb-4">Seller Other Services</h4>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="sellerImg"></div>
+                </div>
+
+                <div class="col-md-8">
+                  <div class="sellerCaption p-1">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div class="star me-2">
+                        <i class="fas fa-star fa-lg text-warning me-1"></i>
+                        <p class="d-inline-block">4.9(50)</p>
+                      </div>
+
+                      <div class="me-2">
+                        <i class="fa-solid fa-tag" style="color: #63e6bf5a"></i>
+                        <span>$10</span>
+                      </div>
+
+                      <div class="love">
+                        <i
+                          class="fa-regular fa-heart fa-lg"
+                          style="color: #aabad4"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row my-4">
+                <div class="col-md-4">
+                  <div class="sellerImg"></div>
+                </div>
+
+                <div class="col-md-8">
+                  <div class="sellerCaption p-1">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div class="star me-2">
+                        <i class="fas fa-star fa-lg text-warning me-1"></i>
+                        <p class="d-inline-block">4.9(50)</p>
+                      </div>
+
+                      <div class="me-2">
+                        <i class="fa-solid fa-tag" style="color: #63e6bf5a"></i>
+                        <span>$10</span>
+                      </div>
+
+                      <div class="love">
+                        <i
+                          class="fa-solid fa-heart fa-lg"
+                          style="color: red"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="sellerImg"></div>
+                </div>
+
+                <div class="col-md-8">
+                  <div class="sellerCaption p-1">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div class="star me-2">
+                        <i class="fas fa-star fa-lg text-warning me-1"></i>
+                        <p class="d-inline-block">4.9(50)</p>
+                      </div>
+
+                      <div class="me-2">
+                        <i class="fa-solid fa-tag" style="color: #63e6bf5a"></i>
+                        <span>$10</span>
+                      </div>
+
+                      <div class="love">
+                        <i
+                          class="fa-regular fa-heart fa-lg"
+                          style="color: #aabad4"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ? >>>>>>>>>> Loading Screen >>>>>>>>>> -->
+      <div class="loading">
+        <span class="loader"></span>
+      </div>
+    </main>
+
+    <footer>
+      <!-- ? >>>>>>>>>>> Suggested Services >>>>>>>>>> -->
+      <div class="suggested" data-aos="fade-right">
+        <div class="container mb-5">
+          <h3 class="my-5">Suggested Services</h3>
+          <div class="row g-4">
+            <div class="col-lg-3" data-aos="fade-right">
+              <div>
+                <div class="card border-0 shadow">
+                  <img
+                    src="images/Al Barges.png"
+                    class="card-img-top w-100"
+                    alt="Al Barges"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div>
+                      <i class="fas fa-star fa-sm text-warning me-1"></i>
+                      <span class="text-body-secondary">4.9</span>
+                      <i
+                        class="fa-solid fa-cart-shopping mx-2"
+                        style="color: #63e6be"
+                      ></i>
+                      <span class="text-body-secondary">300</span>
+                    </div>
+
+                    <div
+                      class="d-flex align-items-center justify-content-between mt-4"
+                    >
+                      <div class="d-flex align-items-center">
+                        <div class="janImg me-2"></div>
+                        <h6 class="text-black">Jane Smith</h6>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-tag" style="color: #63e6be"></i>
+                        <span class="spanDollar">$10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-right">
+              <div>
+                <div class="card border-0 shadow">
+                  <img
+                    src="images/Al Barges.png"
+                    class="card-img-top w-100"
+                    alt="Al Barges"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div>
+                      <i class="fas fa-star fa-sm text-warning me-1"></i>
+                      <span class="text-body-secondary">4.9</span>
+                      <i
+                        class="fa-solid fa-cart-shopping mx-2"
+                        style="color: #63e6be"
+                      ></i>
+                      <span class="text-body-secondary">300</span>
+                    </div>
+
+                    <div
+                      class="d-flex align-items-center justify-content-between mt-4"
+                    >
+                      <div class="d-flex align-items-center">
+                        <div class="janImg me-2"></div>
+                        <h6 class="text-black">Jane Smith</h6>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-tag" style="color: #63e6be"></i>
+                        <span class="spanDollar">$10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-right">
+              <div>
+                <div class="card border-0 shadow">
+                  <img
+                    src="images/Al Barges.png"
+                    class="card-img-top w-100"
+                    alt="Al Barges"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div>
+                      <i class="fas fa-star fa-sm text-warning me-1"></i>
+                      <span class="text-body-secondary">4.9</span>
+                      <i
+                        class="fa-solid fa-cart-shopping mx-2"
+                        style="color: #63e6be"
+                      ></i>
+                      <span class="text-body-secondary">300</span>
+                    </div>
+
+                    <div
+                      class="d-flex align-items-center justify-content-between mt-4"
+                    >
+                      <div class="d-flex align-items-center">
+                        <div class="janImg me-2"></div>
+                        <h6 class="text-black">Jane Smith</h6>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-tag" style="color: #63e6be"></i>
+                        <span class="spanDollar">$10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-right">
+              <div>
+                <div class="card border-0 shadow">
+                  <img
+                    src="images/Al Barges.png"
+                    class="card-img-top w-100"
+                    alt="Al Barges"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div>
+                      <i class="fas fa-star fa-sm text-warning me-1"></i>
+                      <span class="text-body-secondary">4.9</span>
+                      <i
+                        class="fa-solid fa-cart-shopping mx-2"
+                        style="color: #63e6be"
+                      ></i>
+                      <span class="text-body-secondary">300</span>
+                    </div>
+
+                    <div
+                      class="d-flex align-items-center justify-content-between mt-4"
+                    >
+                      <div class="d-flex align-items-center">
+                        <div class="janImg me-2"></div>
+                        <h6 class="text-black">Jane Smith</h6>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-tag" style="color: #63e6be"></i>
+                        <span class="spanDollar">$10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ? ======>> jquery JS ========>> -->
+    <script src="Java script/jquery-3.7.1.min.js"></script>
+    <!-- ? ======>> BootStrap JS ========>> -->
+    <script src="Java script/bootstrap.bundle.min.js"></script>
+    <!-- ! ======>> Fontawesome JS ========>> -->
+    <script src="Java script/all.min.js"></script>
+    <!-- ? ======>> AOS Plugin ========>> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- ! ======>> Owl Carousel ========>> -->
+    <script src="Java script/owl.carousel.min.js"></script>
+    <!-- * ======>> JS ========>> -->
+    <script src="Java script/index.js"></script>
+  </body>
+</html>
